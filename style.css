@@ -1,0 +1,490 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:'Ubuntu', sans-serif;
+  background-color: #060930;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #64C9CF;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #64C9CF;
+}
+
+
+/* Navbar */
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+nav.sticky {
+  background-color: #02041c;
+  padding: 12px 0;
+}
+
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .logo{
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+}
+
+nav.sticky .navbar .logo{
+  color: white;
+}
+
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 9px;
+}
+
+nav .navbar .menu a{
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+
+nav .navbar .menu a:hover{
+  color: #64ffda;
+}
+
+nav.sticky .menu a{
+  color: #64ffda;
+}
+
+nav .sticky .menu a:hover{
+  color: white;
+}
+
+/* Side Navigation menu button*/
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: orange;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+nav .menu-btn{
+  color: pink;
+}
+
+nav.sticky .menu-btn{
+  color: green;
+}
+
+.navbar .menu-btn{
+  color: white;
+}
+
+/* Home Section */
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url("841699.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home .home-content{
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .txt1{
+  font-size: 37px;
+  color: white;
+  font-family: 'Courgette', cursive;
+  font-weight: 500;
+  text-align: center;
+  margin-left: -80px;
+}
+
+.home .txt2{
+  font-size: 68px;
+  color: white;
+  font-family: 'Play', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.home .txt3{
+  font-size: 31px;
+  color: white;
+  font-family: 'Courgette', cursive;
+  font-weight: 500;
+  text-align: center;
+}
+
+.home .arrow{
+  text-align: center;
+  width: 90%;
+  height: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding-bottom:
+}
+
+.icon{
+  color: white;
+}
+
+.icon:hover{
+  color: #293B5F;
+}
+
+/* About section */
+section{
+  padding-top: 40px;
+}
+
+section .content{
+  width: 80%;
+  margin: 40px auto;
+}
+
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title{
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  text-align: left;
+  font-family: 'Play', sans-serif;
+}
+
+section .title span{
+  position: relative;
+  font-size: 48px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.about .left img{
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.about .about-details .right{
+  width: 65%;
+}
+
+.about-details .right p{
+  font-family: 'Ubuntu', sans-serif;
+  color: #827397;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+
+ td{
+  color: #64C9CF;
+  padding: 10px 60px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.caret{
+  color: white;
+  padding-right: 10px;
+}
+
+/* Experience */
+.experience .content .topic{
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  word-spacing: 4px;
+  text-align: justify;
+}
+
+.experience .content table{
+  width: 90%;
+  margin: 40px auto;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 30px 24px;
+  line-height: 2;
+}
+
+table .Experience-table tr{
+  padding: 40px 0;
+}
+
+.description{
+  color: #827397;
+}
+
+.table-link{
+  color: #64ffda;
+}
+
+.table-link:hover{
+  color: white;
+}
+
+/* Skills */
+
+.skills .title{
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  text-align: left;
+  font-family: 'Play', sans-serif;
+}
+
+.skills .title span{
+  position: relative;
+  font-size: 48px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.skills-table table{
+  width: 90%;
+  margin: 40px auto;
+  text-align: left;
+  border-spacing: 0px 15px;
+}
+
+.fas{
+  color: white;
+}
+
+.star:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+/* Contact */
+.contact .content .contact-title{
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+}
+
+.contact .contact-title span{
+  position: relative;
+  font-size: 48px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.contact .contact-paragraph p{
+  font-family: 'Ubuntu', sans-serif;
+  color: #827397;
+  text-align: justify;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.7;
+  word-spacing: 3px;
+  text-align: center;
+  margin: 40px auto;
+  width: 60%;
+}
+
+.contact .contact-paragraph button{
+  margin:40px auto;
+  text-align: center;
+  text-align: justify;
+  display: flex;
+}
+
+.contact .contact-paragraph button{
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact .contact-paragraph button:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.footer .social-icon{
+  margin: -8px auto;
+  text-align: center;
+}
+
+.footer .social-icon a{
+  margin: 0 20px;
+  color: #64ffda;
+}
+
+.footer .social-icon a:hover{
+  color: white;
+}
+
+.footer .design{
+  color: white;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.footer .design p{
+  font-family: 'Play', sans-serif;
+  font-size: 23px;
+}
+
+@media (max-width:1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+
+@media (max-width:1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+}
+
+@media (max-width:900px){
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:750px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: green;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar .active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: white;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #64ffda;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .txt2{
+    font-size: 70px;
+  }
+  .home .txt1{
+    font-size: 35px;
+  }
+  .home .txt3{
+    font-size: 35px;
+  }
+  .contact .contact-paragraph p{
+    width: 100%;
+    margin: 20px auto;
+  }
+  .experience .content table{
+    width: 100%;
+    margin: 20px auto;
+  }
+  .skills-table table{
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+@media (max-width:500px) {
+  .home .txt2{
+    font-size: 55px;
+  }
+  .home .txt1{
+    font-size: 33px;
+  }
+  .home .txt3{
+    font-size: 33px;
+  }
+}
